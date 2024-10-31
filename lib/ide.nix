@@ -188,6 +188,22 @@ let
       };
     };
   };
+
+  catppuccin = {
+    vim = {
+      statusline.lualine = {
+        enable = true;
+        theme = "catppuccin";
+      };
+      theme = {
+        enable = true;
+        name = "catppuccin";
+        style = "mocha";
+        transparency = false;
+      };
+    };
+  };
+
 in
 {
   full = neovimBuilder {
@@ -214,5 +230,9 @@ in
 
   scala-tokyo-night = neovimBuilder {
     config = deepMerge cfg tokyo-night;
+  };
+
+  scala-catppuccin = neovimBuilder {
+    config = deepMerge cfg catppuccin;
   };
 }

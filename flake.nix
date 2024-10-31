@@ -503,6 +503,7 @@
           #scala-nightly = default-ide.scala-nightly.neovim;
           scala-rose-pine = default-ide.scala-rose-pine.neovim;
           scala-tokyo-night = default-ide.scala-tokyo-night.neovim;
+          scala-catppuccin = default-ide.scala-catppuccin.neovim;
 
           # Neovim configuration files
           ide-neovim-rc = default-ide.full.neovimRC;
